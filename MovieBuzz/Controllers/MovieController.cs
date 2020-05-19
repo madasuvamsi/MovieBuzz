@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MovieBuzz.Models;
+using MovieBuzz.ViewModel;
 
 namespace MovieBuzz.Controllers
 {
@@ -14,7 +15,20 @@ namespace MovieBuzz.Controllers
         public ActionResult Random()
         {
             var movie = new Movies { movieName = "Avengers" };
-            return View(movie);
+
+            var customers = new List<Customer>()
+            {
+                new Customer{customerName="Customer 1"},
+                new Customer{customerName="Customer 2"}
+            };
+
+            var viewModel = new RandomMoviesViewModel 
+            {
+                Movie=movie,
+                Customers=customers
+            };
+            
+            return View(viewModel);
         }
 
         //Movie/Release

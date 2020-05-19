@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MovieBuzz.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+<ul>
+    @foreach (var customer in Model)
+    {
+        <li>@Html.ActionLink(customer.customerName,"Detail","Customer", new { id = customer.Id },null)</li>
+    }
+</ul>
+
