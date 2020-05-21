@@ -111,3 +111,17 @@ E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.csproj.GenerateRes
 E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddedIsSubscribedToCustomer.resources
 E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddMembershipType.resources
 E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.PopulateMembershipTypes.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddedAnnotationsToCustomer.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.CommentedMembershipID.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.unCommentedMembershipID.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.updatedDatatypeInCustomerModel.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.updatedDatatypeInCustomerModel1.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.updatedDatatypeInCustomerModel2.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.updatedDatatypeInCustomerModel3.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.RevertedMembershipTypeIDtoShort.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddMembershipName.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.updateMembershipName.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddedCustomerBirtday.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.UpdatedCustomerBirthday.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddedGenreDeatilsToMovie.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.InsertGenre.resources

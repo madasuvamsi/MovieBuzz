@@ -6,3 +6,11 @@
 
 <h2>@Model.customerName</h2>
 
+<ul>
+    <li>Membership:@Model.MembershipType.MembershipName</li>
+    @if(@Model.Birthday.HasValue)
+    {
+        <li>Birthday:@Model.Birthday.Value.ToShortDateString()</li>
+    }
+</ul>
+

@@ -16,18 +16,24 @@ else
     <thead>
         <tr>
             <th>
-                Movies
+                Movie Name
+            </th>
+            <th>
+                Genre
             </th>
         </tr>
     </thead>
     <tbody>
         @foreach (var movie in Model)
         {
-            <tr>
-                <td>
-                    @movie.movieName
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.ActionLink(@movie.movieName, "Detail", "Movie", new { id = movie.id }, null)
+            </td>
+            <td>
+               @movie.Genre.GenreName
+            </td>
+        </tr>
         }
     </tbody>
 </table>

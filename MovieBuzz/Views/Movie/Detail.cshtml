@@ -1,0 +1,14 @@
+﻿@model MovieBuzz.Models.Movies
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.movieName</h2>
+<ul>
+    <li>Genre : @Model.Genre.GenreName</li>
+    <li>Release Date: @Model.ReleaseDate.ToLongDateString()</li>
+    <li>Date Added: @Model.AddedDate.ToLongDateString()</li>
+    <li>Numbers In Stock: @Model.NumbersInStock</li>
+</ul>
+

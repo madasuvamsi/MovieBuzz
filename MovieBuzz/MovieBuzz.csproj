@@ -191,9 +191,66 @@
     <Compile Include="Migrations\202005210346201_PopulateMembershipTypes.Designer.cs">
       <DependentUpon>202005210346201_PopulateMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005210442522_AddedAnnotationsToCustomer.cs" />
+    <Compile Include="Migrations\202005210442522_AddedAnnotationsToCustomer.Designer.cs">
+      <DependentUpon>202005210442522_AddedAnnotationsToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210504006_CommentedMembershipID.cs" />
+    <Compile Include="Migrations\202005210504006_CommentedMembershipID.Designer.cs">
+      <DependentUpon>202005210504006_CommentedMembershipID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210505014_unCommentedMembershipID.cs" />
+    <Compile Include="Migrations\202005210505014_unCommentedMembershipID.Designer.cs">
+      <DependentUpon>202005210505014_unCommentedMembershipID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210525084_updatedDatatypeInCustomerModel.cs" />
+    <Compile Include="Migrations\202005210525084_updatedDatatypeInCustomerModel.Designer.cs">
+      <DependentUpon>202005210525084_updatedDatatypeInCustomerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210526044_updatedDatatypeInCustomerModel1.cs" />
+    <Compile Include="Migrations\202005210526044_updatedDatatypeInCustomerModel1.Designer.cs">
+      <DependentUpon>202005210526044_updatedDatatypeInCustomerModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210533366_updatedDatatypeInCustomerModel2.cs" />
+    <Compile Include="Migrations\202005210533366_updatedDatatypeInCustomerModel2.Designer.cs">
+      <DependentUpon>202005210533366_updatedDatatypeInCustomerModel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210534130_updatedDatatypeInCustomerModel3.cs" />
+    <Compile Include="Migrations\202005210534130_updatedDatatypeInCustomerModel3.Designer.cs">
+      <DependentUpon>202005210534130_updatedDatatypeInCustomerModel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210549129_RevertedMembershipTypeIDtoShort.cs" />
+    <Compile Include="Migrations\202005210549129_RevertedMembershipTypeIDtoShort.Designer.cs">
+      <DependentUpon>202005210549129_RevertedMembershipTypeIDtoShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210557317_AddMembershipName.cs" />
+    <Compile Include="Migrations\202005210557317_AddMembershipName.Designer.cs">
+      <DependentUpon>202005210557317_AddMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210558465_updateMembershipName.cs" />
+    <Compile Include="Migrations\202005210558465_updateMembershipName.Designer.cs">
+      <DependentUpon>202005210558465_updateMembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210605361_AddedCustomerBirtday.cs" />
+    <Compile Include="Migrations\202005210605361_AddedCustomerBirtday.Designer.cs">
+      <DependentUpon>202005210605361_AddedCustomerBirtday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210606391_UpdatedCustomerBirthday.cs" />
+    <Compile Include="Migrations\202005210606391_UpdatedCustomerBirthday.Designer.cs">
+      <DependentUpon>202005210606391_UpdatedCustomerBirthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210628108_AddedGenreDeatilsToMovie.cs" />
+    <Compile Include="Migrations\202005210628108_AddedGenreDeatilsToMovie.Designer.cs">
+      <DependentUpon>202005210628108_AddedGenreDeatilsToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005210628586_InsertGenre.cs" />
+    <Compile Include="Migrations\202005210628586_InsertGenre.Designer.cs">
+      <DependentUpon>202005210628586_InsertGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -264,6 +321,7 @@
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\Detail.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
+    <Content Include="Views\Movie\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -293,6 +351,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005210346201_PopulateMembershipTypes.resx">
       <DependentUpon>202005210346201_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210442522_AddedAnnotationsToCustomer.resx">
+      <DependentUpon>202005210442522_AddedAnnotationsToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210504006_CommentedMembershipID.resx">
+      <DependentUpon>202005210504006_CommentedMembershipID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210505014_unCommentedMembershipID.resx">
+      <DependentUpon>202005210505014_unCommentedMembershipID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210525084_updatedDatatypeInCustomerModel.resx">
+      <DependentUpon>202005210525084_updatedDatatypeInCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210526044_updatedDatatypeInCustomerModel1.resx">
+      <DependentUpon>202005210526044_updatedDatatypeInCustomerModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210533366_updatedDatatypeInCustomerModel2.resx">
+      <DependentUpon>202005210533366_updatedDatatypeInCustomerModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210534130_updatedDatatypeInCustomerModel3.resx">
+      <DependentUpon>202005210534130_updatedDatatypeInCustomerModel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210549129_RevertedMembershipTypeIDtoShort.resx">
+      <DependentUpon>202005210549129_RevertedMembershipTypeIDtoShort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210557317_AddMembershipName.resx">
+      <DependentUpon>202005210557317_AddMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210558465_updateMembershipName.resx">
+      <DependentUpon>202005210558465_updateMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210605361_AddedCustomerBirtday.resx">
+      <DependentUpon>202005210605361_AddedCustomerBirtday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210606391_UpdatedCustomerBirthday.resx">
+      <DependentUpon>202005210606391_UpdatedCustomerBirthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210628108_AddedGenreDeatilsToMovie.resx">
+      <DependentUpon>202005210628108_AddedGenreDeatilsToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005210628586_InsertGenre.resx">
+      <DependentUpon>202005210628586_InsertGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
