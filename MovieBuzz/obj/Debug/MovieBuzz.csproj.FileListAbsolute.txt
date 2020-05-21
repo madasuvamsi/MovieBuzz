@@ -106,3 +106,8 @@ E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.csproj.CoreCompile
 E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.csproj.CopyComplete
 E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.dll
 E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.pdb
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.InitialMigration.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.csproj.GenerateResource.cache
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddedIsSubscribedToCustomer.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.AddMembershipType.resources
+E:\WebApp Assignments\MovieBuzz\MovieBuzz\obj\Debug\MovieBuzz.Migrations.PopulateMembershipTypes.resources

@@ -36,7 +36,9 @@ namespace MovieBuzz.Controllers
             return new List<Customer>
             {
                 new Customer { Id = 1, customerName = "John Smith" },
-                new Customer { Id = 2, customerName = "Mary Williams" }
+                new Customer { Id = 2, customerName = "Mary Williams" },
+                new Customer { Id = 3, customerName = "John Sena" },
+                new Customer { Id = 4, customerName = "Tom Cruise" }
             };
         }
     }

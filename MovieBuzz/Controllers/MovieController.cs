@@ -12,23 +12,10 @@ namespace MovieBuzz.Controllers
     public class MovieController : Controller
     {
         // GET: Movie/Random
-        public ActionResult Random()
+        public ActionResult Index()
         {
-            var movie = new Movies { movieName = "Avengers" };
-
-            var customers = new List<Customer>()
-            {
-                new Customer{customerName="Customer 1"},
-                new Customer{customerName="Customer 2"}
-            };
-
-            var viewModel = new RandomMoviesViewModel 
-            {
-                Movie=movie,
-                Customers=customers
-            };
-            
-            return View(viewModel);
+            var movies = GetMovies();
+            return View(movies);
         }
 
         //Movie/Release
@@ -37,6 +24,16 @@ namespace MovieBuzz.Controllers
         public ActionResult ReleaseByDate(int year,int month)
         {
             return Content(string.Format("{0}/{1}", year, month));
+        }
+
+        private IEnumerable<Movies> GetMovies()
+        {
+            return new List<Movies>
+            {
+                new Movies{id=1,movieName="Spider Man"},
+                new Movies{id=2,movieName="Wonder Women"},
+                new Movies{id=3,movieName="Forzen"},
+            };
         }
 
         

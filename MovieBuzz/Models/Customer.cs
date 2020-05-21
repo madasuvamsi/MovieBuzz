@@ -10,6 +10,16 @@ namespace MovieBuzz.Models
         public int Id { get; set; }
         public string customerName { get; set; }
 
-        
+        public bool IsSubscribedToNewsLetter { get; set; }
+
+
+        //Navigation Property
+        public MembershipType MembershipType { get; set; }
+
+        public byte MembershipTypeId { get; set; }
+
+
+
+
     }
 }

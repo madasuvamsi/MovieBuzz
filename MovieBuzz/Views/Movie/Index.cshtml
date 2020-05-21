@@ -1,0 +1,36 @@
+﻿@model IEnumerable<MovieBuzz.Models.Movies>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+
+@if(!Model.Any())
+{
+    <p>No Movies to display</p>
+}
+else
+{
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Movies
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>
+                    @movie.movieName
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+
+
