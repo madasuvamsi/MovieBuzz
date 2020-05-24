@@ -6,6 +6,9 @@
 
 <h2>Movies</h2>
 
+<a class="btn btn-primary" href="/Movie/New" role="button">Add New Movie</a>
+<br />
+<br />
 @if(!Model.Any())
 {
     <p>No Movies to display</p>
@@ -28,7 +31,7 @@ else
         {
         <tr>
             <td>
-                @Html.ActionLink(@movie.movieName, "Detail", "Movie", new { id = movie.id }, null)
+                @Html.ActionLink(@movie.movieName, "Edit", "Movie", new { id = movie.id }, null)
             </td>
             <td>
                @movie.Genre.GenreName

@@ -12,6 +12,7 @@ namespace MovieBuzz.Models
 
         [Required]
         [StringLength(255)]
+        [Display(Name ="Customer Name")]
         public string customerName { get; set; }
 
         public bool IsSubscribedToNewsLetter { get; set; }
@@ -20,8 +21,10 @@ namespace MovieBuzz.Models
         ////Navigation Property
         public MembershipType MembershipType { get; set; }
 
+        [Display(Name ="Membership Type")]
         public short MembershipTypeId { get; set; }
 
+        [Display(Name ="Date of Birth")]
         public DateTime? Birthday { get; set; }
     }
 }

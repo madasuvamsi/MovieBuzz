@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using MovieBuzz.Models;
 using MovieBuzz.ViewModel;
 using System.Data.Entity;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MovieBuzz.Controllers
 {
@@ -26,6 +27,55 @@ namespace MovieBuzz.Controllers
         {
             var movies = _context.Movies.Include(c=>c.Genre).ToList();
             return View(movies);
+        }
+
+        public ActionResult New()
+        {
+          
+            var genre = _context.Genres.ToList();
+            var movieViewModel = new MoviesViewModel
+            {
+                Genres = genre
+
+            };
+            return View("MovieForm", movieViewModel);
+        }
+
+        [HttpPost]
+        public ActionResult SaveMovie(Movies movies)
+        {
+           if(movies.id==0)
+            {
+                _context.Movies.Add(movies);
+            }
+            else
+            {
+                var movieInDb = _context.Movies.Single(m => m.id == movies.id);
+                movieInDb.movieName = movies.movieName;
+                movieInDb.ReleaseDate = movies.ReleaseDate;
+                movieInDb.AddedDate = movies.AddedDate;
+                movieInDb.NumbersInStock = movies.NumbersInStock;
+                movieInDb.GenreId = movies.GenreId;
+            }
+
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Movie");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.id == id);
+            if(movie==null)
+            {
+                return HttpNotFound();
+            }
+            var movieViewModel = new MoviesViewModel
+            {
+                Movies = movie,
+                Genres = _context.Genres.ToList()
+            };
+
+            return View("MovieForm", movieViewModel);
         }
 
         public ActionResult Detail(int id)

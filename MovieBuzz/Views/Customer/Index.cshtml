@@ -5,6 +5,9 @@
 }
 
 <h2>Customers</h2>
+<br />
+<a class="btn btn-primary" href="/Customer/New" role="button">Add New Customer</a>
+<br /><br />
 @if(!Model.Any())
 {
     <p>No Customers to display</p>
@@ -23,7 +26,7 @@ else
         {
         <tr>
             <td>
-                @Html.ActionLink(customer.customerName, "Detail", "Customer", new { id = customer.Id }, null)
+                @Html.ActionLink(customer.customerName, "Edit", "Customer", new { id = customer.Id }, null)
             </td>
             <td>
                 @customer.MembershipType.MembershipName
