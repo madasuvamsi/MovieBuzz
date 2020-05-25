@@ -42,8 +42,19 @@ namespace MovieBuzz.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult SaveMovie(Movies movies)
         {
+            if (!ModelState.IsValid)
+            {
+                var genre = _context.Genres.ToList();
+                var viewModel = new MoviesViewModel(movies)
+                {
+                    Genres = genre
+             
+                };
+                return View("MovieForm", viewModel);
+            }
            if(movies.id==0)
             {
                 _context.Movies.Add(movies);
@@ -69,9 +80,9 @@ namespace MovieBuzz.Controllers
             {
                 return HttpNotFound();
             }
-            var movieViewModel = new MoviesViewModel
+            var movieViewModel = new MoviesViewModel(movie)
             {
-                Movies = movie,
+                
                 Genres = _context.Genres.ToList()
             };
 

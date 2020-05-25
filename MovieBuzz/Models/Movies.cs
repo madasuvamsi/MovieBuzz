@@ -23,6 +23,7 @@ namespace MovieBuzz.Models
         public DateTime AddedDate { get; set; }
 
         [Required]
+        [Range(1,20)]
         [Display(Name ="Numbers in Stock")]
         public int NumbersInStock { get; set; }
 

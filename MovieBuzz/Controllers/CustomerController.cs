@@ -50,6 +50,7 @@ namespace MovieBuzz.Controllers
             var membershitypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerViewModel
             {
+                customer=new Customer(),
                 MembershipTypes = membershitypes
             };
             return View("CustomerForm",viewModel);
@@ -57,8 +58,19 @@ namespace MovieBuzz.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
+            if(!ModelState.IsValid)
+            {
+               
+                var viewModel = new CustomerViewModel
+                {
+                    MembershipTypes = _context.MembershipTypes.ToList(),
+                    customer = customer
+                };
+                return View("CustomerForm", viewModel);
+            }
             if (customer.Id == 0)
             {
                 _context.Customers.Add(customer);

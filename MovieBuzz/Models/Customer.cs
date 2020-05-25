@@ -25,6 +25,10 @@ namespace MovieBuzz.Models
         public short MembershipTypeId { get; set; }
 
         [Display(Name ="Date of Birth")]
+        [MoreThan18Years]
         public DateTime? Birthday { get; set; }
+
+
+      
     }
 }

@@ -9,25 +9,37 @@
 @using (Html.BeginForm("SaveMovie", "Movie"))
 {
     <div class="form-group">
-        @Html.LabelFor(m => m.Movies.movieName)
-        @Html.TextBoxFor(m => m.Movies.movieName, new { @class = "form-control" })
+        @Html.LabelFor(m => m.movieName)
+        @Html.TextBoxFor(m => m.movieName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.movieName)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Movies.ReleaseDate)
-        @Html.TextBoxFor(m => m.Movies.ReleaseDate, new { @class = "form-control" })
+        @Html.LabelFor(m => m.ReleaseDate)
+        @Html.TextBoxFor(m => m.ReleaseDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ReleaseDate)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Movies.AddedDate)
-        @Html.TextBoxFor(m => m.Movies.AddedDate, new { @class = "form-control" })
+        @Html.LabelFor(m => m.AddedDate)
+        @Html.TextBoxFor(m => m.AddedDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.AddedDate)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Movies.GenreId)
-        @Html.DropDownListFor(c => c.Movies.GenreId, new SelectList(Model.Genres, "Id", "GenreName"), "Select Genre", new { @class = "form-control" })
+        @Html.LabelFor(m => m.GenreId)
+        @Html.DropDownListFor(c => c.GenreId, new SelectList(Model.Genres, "Id", "GenreName"), "Select Genre", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.GenreId)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Movies.NumbersInStock)
-        @Html.TextBoxFor(m => m.Movies.NumbersInStock, new { @class = "form-control" })
+        @Html.LabelFor(m => m.NumbersInStock)
+        @Html.TextBoxFor(m => m.NumbersInStock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.NumbersInStock)
     </div>
-    @Html.HiddenFor(m=>m.Movies.id)
+    @Html.HiddenFor(m => m.id)
+    @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save Movie</button>
+}
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
 }

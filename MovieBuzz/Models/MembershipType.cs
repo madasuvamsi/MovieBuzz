@@ -14,5 +14,8 @@ namespace MovieBuzz.Models
 
         public string MembershipName { get; set; }
 
+        public static readonly byte unknown = 0;
+        public static readonly byte PayasYougo = 1;
+
     }
 }
